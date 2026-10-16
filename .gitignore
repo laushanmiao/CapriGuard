@@ -1,0 +1,71 @@
+# ============================================================
+# CapriGuard — Arduino / ESP32 Project .gitignore
+# ============================================================
+
+# ------------------------------------------------------------
+# !! SENSITIVE CREDENTIALS — NEVER COMMIT THESE !!
+# ------------------------------------------------------------
+secrets.h
+secrets.cpp
+config_private.h
+credentials.h
+*.env
+.env*
+
+# ------------------------------------------------------------
+# Arduino IDE
+# ------------------------------------------------------------
+# Build artifacts
+build/
+*.bin
+*.elf
+*.hex
+*.map
+
+# Arduino IDE 2.x workspace data
+.vs/
+.vscode/
+*.code-workspace
+
+# Arduino IDE backup files
+*~
+*.bak
+
+# ------------------------------------------------------------
+# ESP32 / ESP-IDF
+# ------------------------------------------------------------
+sdkconfig
+sdkconfig.old
+dependencies.lock
+managed_components/
+partitions.bin
+nvs.bin
+
+# ------------------------------------------------------------
+# OS / System files
+# ------------------------------------------------------------
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ------------------------------------------------------------
+# Editor / IDE
+# ------------------------------------------------------------
+.idea/
+*.suo
+*.user
+*.swp
+*.swo
+.project
+.settings/
+
+# ------------------------------------------------------------
+# Logs & temp
+# ------------------------------------------------------------
+*.log
+tmp/
+temp/
